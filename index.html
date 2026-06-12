@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sain — Frontend Developer</title>
+  <meta name="description" content="Sain is a creative Frontend Developer with 3+ years of experience building high-performance, scalable, and responsive web solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SIDEBAR EMAIL -->
+  <!-- ═══════════════════════════════════════════ -->
+  <aside class="sidebar-email" aria-label="Email contact">
+    <a href="mailto:sain@example.com" class="sidebar-link">sain@example.com</a>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MENU BUTTON -->
+  <!-- ═══════════════════════════════════════════ -->
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </button>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FULLSCREEN NAV OVERLAY -->
+  <!-- ═══════════════════════════════════════════ -->
+  <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <div class="nav-grid">
+      <div class="nav-col">
+        <p class="nav-label">SOCIAL</p>
+        <ul class="nav-list">
+          <li><a href="https://github.com/" target="_blank" rel="noopener" class="nav-link">Github</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener" class="nav-link">LinkedIn</a></li>
+          <li><a href="https://twitter.com/" target="_blank" rel="noopener" class="nav-link">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="nav-col">
+        <p class="nav-label">MENU</p>
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link nav-scroll" data-target="hero">Home</a></li>
+          <li><a href="#about" class="nav-link nav-scroll" data-target="about">About Me</a></li>
+          <li><a href="#experience" class="nav-link nav-scroll" data-target="experience">Experience</a></li>
+          <li><a href="#projects" class="nav-link nav-scroll" data-target="projects">Projects</a></li>
+        </ul>
+      </div>
+      <div class="nav-col">
+        <p class="nav-label">GET IN TOUCH</p>
+        <a href="mailto:sain@example.com" class="nav-email">sain@example.com</a>
+      </div>
+    </div>
+    <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO SECTION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-noise"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-title-wrap reveal-up">
+          <h1 class="hero-title">
+            <span class="accent">FRONTEND</span><br />
+            <span>DEVELOPER</span>
+          </h1>
+        </div>
+        <div class="hero-intro reveal-up" style="--delay: 0.15s">
+          <p>Hi! I'm <strong>Sain</strong>. A creative Frontend Developer with 3+ years of experience in building high-performance, scalable, and responsive web solutions.</p>
+        </div>
+        <div class="hero-cta reveal-up" style="--delay: 0.25s">
+          <a href="mailto:sain@example.com" class="btn-primary" id="letsTalkBtn">LET'S TALK</a>
+          <span class="availability">
+            <span class="dot"></span>
+            Available for full-time opportunities
+          </span>
+        </div>
+      </div>
+      <div class="hero-stats reveal-up" style="--delay: 0.35s">
+        <div class="stat">
+          <span class="stat-num accent">3+</span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num accent">7+</span>
+          <span class="stat-label">Completed Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num accent">10K+</span>
+          <span class="stat-label">Hours Worked</span>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative grid dots -->
+    <div class="hero-bg-dots" aria-hidden="true"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ABOUT SECTION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-tag reveal-up">About Me</div>
+      <h2 class="section-heading reveal-up">This is me.</h2>
+      <div class="about-body reveal-up">
+        <p>
+          Hi, I'm Sain. I'm a frontend web developer dedicated to turning ideas into creative solutions. My passion lies in crafting interfaces that don't just look good — they work beautifully.
+        </p>
+        <p>
+          I place the user at the center of everything I build. Whether it's obsessing over responsive layouts, optimizing load performance, or writing accessible markup — I care deeply about the details that make an experience feel truly polished. I enjoy collaborating with teams and clients to deliver products that exceed expectations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STACK / SKILLS SECTION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="stack" class="section stack">
+    <div class="container">
+      <div class="section-tag reveal-up">Skills</div>
+      <h2 class="section-heading reveal-up">My Stack.</h2>
+      <div class="stack-grid reveal-up">
+        <div class="stack-group">
+          <h3 class="stack-cat">Frontend</h3>
+          <ul class="stack-list">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Redux</li>
+            <li>Tailwind CSS</li>
+            <li>GSAP</li>
+            <li>Framer Motion</li>
+            <li>Sass</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3 class="stack-cat">Backend</h3>
+          <ul class="stack-list">
+            <li>Node.js</li>
+            <li>NestJS</li>
+            <li>Express.js</li>
+          </ul>
+          <h3 class="stack-cat" style="margin-top: 2rem;">Database</h3>
+          <ul class="stack-list">
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Prisma</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3 class="stack-cat">Tools</h3>
+          <ul class="stack-list">
+            <li>Git</li>
+            <li>Docker</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- EXPERIENCE SECTION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-tag reveal-up">Career</div>
+      <h2 class="section-heading reveal-up">My Experience.</h2>
+      <div class="exp-list">
+
+        <article class="exp-item reveal-up">
+          <div class="exp-meta">
+            <span class="exp-period">Dec 2024 — Present</span>
+          </div>
+          <div class="exp-body">
+            <h3 class="exp-role">Software Engineer <span class="accent">(Frontend)</span></h3>
+            <p class="exp-company">Strativ AB</p>
+            <p class="exp-desc">Led frontend development of enterprise-grade web applications, collaborating cross-functionally to deliver performant, accessible user interfaces using Next.js and TypeScript.</p>
+          </div>
+        </article>
+
+        <article class="exp-item reveal-up">
+          <div class="exp-meta">
+            <span class="exp-period">Oct 2023 — Nov 2024</span>
+          </div>
+          <div class="exp-body">
+            <h3 class="exp-role">Frontend Developer</h3>
+            <p class="exp-company">Epikcoders</p>
+            <p class="exp-desc">Built and maintained scalable React applications, implemented complex UI components, and optimized bundle sizes for a SaaS eCommerce platform serving thousands of users.</p>
+          </div>
+        </article>
+
+        <article class="exp-item reveal-up">
+          <div class="exp-meta">
+            <span class="exp-period">Oct 2022 — Sep 2023</span>
+          </div>
+          <div class="exp-body">
+            <h3 class="exp-role">Frontend Engineer</h3>
+            <p class="exp-company">Anchorblock Technology</p>
+            <p class="exp-desc">Developed responsive web interfaces from Figma designs, integrated REST APIs, and improved overall page load performance by 40% through code-splitting and lazy loading techniques.</p>
+          </div>
+        </article>
+
+        <article class="exp-item reveal-up">
+          <div class="exp-meta">
+            <span class="exp-period">Jan 2022 — Oct 2022</span>
+          </div>
+          <div class="exp-body">
+            <h3 class="exp-role">Frontend Developer <span class="muted">(Part-time)</span></h3>
+            <p class="exp-company">Branex IT</p>
+            <p class="exp-desc">Contributed to client projects with a focus on converting designs into pixel-perfect, cross-browser compatible HTML/CSS layouts enhanced with vanilla JavaScript interactions.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PROJECTS SECTION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-tag reveal-up">Work</div>
+      <h2 class="section-heading reveal-up">Selected Projects.</h2>
+      <div class="projects-list" id="projectsList">
+
+        <a href="#" class="project-item reveal-up" data-index="01">
+          <div class="project-number">01</div>
+          <div class="project-info">
+            <h3 class="project-title">Electro EV</h3>
+            <div class="project-tags">
+              <span>Next.js</span><span>Payload CMS</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="#" class="project-item reveal-up" data-index="02">
+          <div class="project-number">02</div>
+          <div class="project-info">
+            <h3 class="project-title">Epikcart</h3>
+            <div class="project-tags">
+              <span>React</span><span>Redux</span><span>React i18n</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="#" class="project-item reveal-up" data-index="03">
+          <div class="project-number">03</div>
+          <div class="project-info">
+            <h3 class="project-title">Resume Roaster</h3>
+            <div class="project-tags">
+              <span>GPT-4</span><span>Next.js</span><span>PostgreSQL</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="#" class="project-item reveal-up" data-index="04">
+          <div class="project-number">04</div>
+          <div class="project-info">
+            <h3 class="project-title">Property Pro</h3>
+            <div class="project-tags">
+              <span>React.js</span><span>Redux</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="#" class="project-item reveal-up" data-index="05">
+          <div class="project-number">05</div>
+          <div class="project-info">
+            <h3 class="project-title">Crenotive Finance</h3>
+            <div class="project-tags">
+              <span>HTML</span><span>SCSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="#" class="project-item reveal-up" data-index="06">
+          <div class="project-number">06</div>
+          <div class="project-info">
+            <h3 class="project-title">devLinks</h3>
+            <div class="project-tags">
+              <span>Next.js</span><span>Formik</span><span>Drag &amp; Drop</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER / CONTACT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-top reveal-up">
+        <p class="footer-eyebrow">Have a project in mind?</p>
+        <a href="mailto:sain@example.com" class="footer-email">sain@example.com</a>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-credit">Design &amp; built by <strong>Sain</strong></p>
+        <div class="footer-gh">
+          <span class="gh-stat">⭐ <strong id="ghStars">203</strong></span>
+          <span class="gh-stat">⑂ <strong id="ghForks">52</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
