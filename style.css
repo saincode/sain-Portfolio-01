@@ -804,3 +804,74 @@ img {
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
 }
+
+/* ═══════════════════════════════════════════════
+   ABOUT CONTACT LINE
+═══════════════════════════════════════════════ */
+.about-contact-line {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+
+/* ═══════════════════════════════════════════════
+   CERTIFICATIONS SECTION
+═══════════════════════════════════════════════ */
+.certs {
+  background: var(--bg-2);
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+  border-radius: 2px;
+}
+
+.cert-item:hover {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  transform: translateY(-3px);
+}
+
+.cert-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 0.35rem;
+}
+
+.cert-name {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.cert-issuer {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -176,6 +176,9 @@ sections.forEach(sec => sectionObserver.observe(sec));
 /* ── Footer year ───────────────────────────── */
 // Already static in HTML; keeping for future dynamic use
 
+/* ── Certifications reveal ─────────────────── */
+// Cert items are handled by the existing IntersectionObserver via .reveal-up
+
 /* ── Scroll progress bar ───────────────────── */
 const progressBar = document.createElement('div');
 progressBar.style.cssText = `
